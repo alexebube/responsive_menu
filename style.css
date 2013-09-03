@@ -1,0 +1,40 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*
+*
+*Create Styles for the body Tag
+*
+*/
+boby {
+		background-color:#ece8e5;
+	 }
+	
+	
+/*
+*
+*Create markup for the navigation menu
+*
+*/
+nav {
+		height: 40px;
+		width: 100%;
+		background: #455868;
+		font-size:11pt;
+		font-family: 'PT Sans', Arial, Sans-Serif;
+		font-weight:bold;
+		position:relative;
+		border-bottom: 2px solid #283744;
+	}
+
+nav ul {
+		padding:0;
+		margin: 0 auto;
+		width: 600px;
+		height: 40px;
+	}
+
+nav li {
+		display: inline;
+		float: left;
+	}
