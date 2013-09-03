@@ -3,13 +3,26 @@
 
 /*
 *
-*Create Styles for the body Tag
+*Create global Styles for the body, a, nav, ul, li Tag
 *
 */
-boby {
+body, {
 		background-color:#ece8e5;
 	 }
 	 
+body, nav, ul, li, a {
+		margin: 0;
+		padding: 0;	
+	}
+	
+a {
+		text-decoration: none;	
+	}
+
+header {
+		margin: 10 auto;
+		padding: 20px;
+	}
 /*
 *
 *Toggle button menu for smaller screen
@@ -35,7 +48,7 @@ boby {
 
 .nav ul {
 		list-style:none;
-		width:9em;
+		width:12em;
 	}
 
 .nav li {
@@ -74,4 +87,60 @@ boby {
 .nav li ul {
 		position:absolute;
 		left: -9999px;
+	}
+
+.nav > li.hover > ul {
+		left: 0;
+	}
+	
+.nav li li.hover ul {
+		left: 100%;
+		top: 0;
+	}
+	
+.nav li li a {
+		display:block;
+		background: #1d7a62;
+		position: relative;
+		z-index: 100;
+		border-top: 1px solid #175e4c;
+	}
+	
+.nav li li li a {
+		background: #249578;
+		z-index:200;
+		border-top: 1px solid #1d7a62;
+	}
+	
+/*
+*
+* Create style for media queries for smaller creens
+*
+*/
+
+@media screen and (max-width: 768px) {
+		.active {
+				display:block;	
+			}
+		
+		.nav > li {
+				float:none;
+			}
+		
+		.nav > li > .parent {
+				background-position: 95% 50%;
+			}
+			
+		.nav li li .parent {
+				background-repeat: no-repeat;
+				background-position: 95% 50%;
+			}
+			
+		.nav ul {
+				display: block;
+				width: 100%;	
+			}
+		.nav > li.hover > ul, .nav li li.hover ul {
+				position: static;	
+			}
 	}
