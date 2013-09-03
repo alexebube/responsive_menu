@@ -22,15 +22,17 @@ a {
 header {
 		margin: 10 auto;
 		padding: 20px;
+		width:90%;
+		max-width:900px;
 	}
 /*
 *
 *Toggle button menu for smaller screen
 *
 */	
-.show-menu {
+.showMenu {
 		display:none;
-		background: #66;
+		background: #666;
 		padding: 10px 15px;
 		color:#fff;
 	}
@@ -46,20 +48,6 @@ header {
 		background:#175e4c;
 	}
 
-.nav ul {
-		list-style:none;
-		width:12em;
-	}
-
-.nav li {
-		position: relative;
-	}
-	
-.nav a {
-		padding:10px 15px;
-		color:#fff;
-	}
-	
 .nav:before {
 		content: " ";
 		display:table;
@@ -71,8 +59,23 @@ header {
 		clear:both;
 	}
 
-.nav > li {
+.nav ul {
+		list-style:none;
+		width: 11em;
+	}
+
+.nav a {
+		padding:10px 15px;
+		color:#fff;
+	}
+		
+.nav li {
 		position: relative;
+	}
+
+.nav > li {
+		float: left;
+		border-top: 1px solid #104336;
 	}
 	
 .nav > li > .parent {
