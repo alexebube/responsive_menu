@@ -9,32 +9,69 @@
 boby {
 		background-color:#ece8e5;
 	 }
-	
-	
+	 
+/*
+*
+*Toggle button menu for smaller screen
+*
+*/	
+.show-menu {
+		display:none;
+		background: #66;
+		padding: 10px 15px;
+		color:#fff;
+	}
+		
 /*
 *
 *Create markup for the navigation menu
 *
 */
-nav {
-		height: 40px;
-		width: 100%;
-		background: #455868;
-		font-size:11pt;
-		font-family: 'PT Sans', Arial, Sans-Serif;
-		font-weight:bold;
-		position:relative;
-		border-bottom: 2px solid #283744;
+.nav {
+		list-style: none;
+		*zoom: 1;
+		background:#175e4c;
 	}
 
-nav ul {
-		padding:0;
-		margin: 0 auto;
-		width: 600px;
-		height: 40px;
+.nav ul {
+		list-style:none;
+		width:9em;
 	}
 
-nav li {
-		display: inline;
-		float: left;
+.nav li {
+		position: relative;
+	}
+	
+.nav a {
+		padding:10px 15px;
+		color:#fff;
+	}
+	
+.nav:before {
+		content: " ";
+		display:table;
+	}
+	
+.nav:after {
+		content: " ";
+		display:table;
+		clear:both;
+	}
+
+.nav > li {
+		position: relative;
+	}
+	
+.nav > li > .parent {
+		background-repeat:no-repeat;
+		background-position:right;
+	}
+	
+.nav > li > a {
+		display: block;
+	}
+	
+.nav li ul {
+		position:absolute;
+		left: -9999px;
 	}
